@@ -1,0 +1,11 @@
+{
+    "name": "sumitinno/packagetest",
+    "description": "Test Package",
+    "authors": [
+        {
+            "name": "sumit",
+            "email": "sumit.patil@innofied.com"
+        }
+    ],
+    "require": {}
+}
