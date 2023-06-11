@@ -1,11 +1,27 @@
 {
     "name": "sumitinno/packagetest",
     "description": "Test Package",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
     "authors": [
         {
-            "name": "sumit",
-            "email": "sumit.patil@innofied.com"
+            "name": "Innofied",
+            "email": "innofied@innofied.com"
         }
     ],
-    "require": {}
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "SumitInno\\TestPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SumitInno\\TestPackage\\TestPackageServiceProvider"
+            ]
+        }
+    }
 }
